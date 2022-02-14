@@ -1,0 +1,83 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="drawable\AceClubs.jpg" />
+    <None Remove="drawable\AceDiamonds.jpg" />
+    <None Remove="images\100coin.jpg" />
+    <None Remove="images\10coin.jpg" />
+    <None Remove="images\25coin.jpg" />
+    <None Remove="images\5coin.jpg" />
+    <None Remove="images\Back.jpg" />
+    <None Remove="images\Background2.jpg" />
+    <None Remove="images\BackgroundImage.jpg" />
+    <None Remove="images\CardBackground.jpg" />
+    <None Remove="images\CoolBackground.jpg" />
+    <None Remove="images\NewBackgroundImage.jpg" />
+    <None Remove="images\PlayingCard.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="drawable\AceDiamonds.jpg" />
+    <EmbeddedResource Include="images\100coin.jpg" />
+    <EmbeddedResource Include="images\10coin.jpg" />
+    <EmbeddedResource Include="images\25coin.jpg" />
+    <EmbeddedResource Include="images\5coin.jpg" />
+    <EmbeddedResource Include="images\Back.jpg" />
+    <EmbeddedResource Include="images\Background2.jpg" />
+    <EmbeddedResource Include="images\BackgroundImage.jpg" />
+    <EmbeddedResource Include="images\CardBackground.jpg" />
+    <EmbeddedResource Include="images\CoolBackground.jpg" />
+    <EmbeddedResource Include="images\NewBackgroundImage.jpg" />
+    <EmbeddedResource Include="images\PlayingCard.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="drawable\AceClubs.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="View\GameStartPage.xaml.cs">
+      <DependentUpon>GameStartPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="View\FourPlayerGamePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\GameStartPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\ThreePlayerGamePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\TwoPlayerGamePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

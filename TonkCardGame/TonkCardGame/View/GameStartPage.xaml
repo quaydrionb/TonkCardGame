@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TonkCardGame"
+             x:Class="TonkCardGame.View.GameStartPage"
+             BackgroundImageSource="{local:ImageResource TonkCardGame.images.CoolBackground.jpg}">
+
+    <ContentPage.Content >
+
+
+        <StackLayout >
+
+            <StackLayout >
+                <Frame BackgroundColor="DarkRed" BorderColor="Black" >
+                    <Label TextColor="Black" FontAttributes="Bold" Text="Player Options" FontSize="40" HorizontalTextAlignment="Center"/>
+                </Frame>
+                     
+
+                <StackLayout HorizontalOptions="CenterAndExpand" Margin="20" >
+
+
+                    <Button  x:Name="TwoPlayerButton" BorderWidth="5"
+                             Margin="5"
+                             BorderColor="DarkRed"  Text="2 Players" FontSize="20"
+                             HeightRequest="60"
+                             WidthRequest="180" 
+                             HorizontalOptions="CenterAndExpand" 
+                             TextColor="DarkRed" 
+                             BackgroundColor="Black"
+                             Clicked="TwoPlayer_Clicked"/>
+                    <Button  x:Name="ThreePlayerButton" 
+                             BorderWidth="5"
+                             Margin="5"
+                             BorderColor="DarkRed"  Text="3 Players" FontSize="20"
+                             HeightRequest="60"
+                             WidthRequest="180" 
+                             HorizontalOptions="CenterAndExpand" 
+                             TextColor="DarkRed" 
+                             BackgroundColor="Black"
+                            Clicked="ThreePlayer_Clicked"/>
+                    <Button x:Name="FourPlayerButton"
+                            BorderWidth="5"
+                             Margin="5"
+                             BorderColor="DarkRed"  Text="4 Players" FontSize="20"
+                             HeightRequest="60"
+                             WidthRequest="180" 
+                             HorizontalOptions="CenterAndExpand" 
+                             TextColor="DarkRed" 
+                             BackgroundColor="Black"
+                             Clicked="FourPlayer_Clicked"/>
+
+                </StackLayout>
+
+
+
+            </StackLayout>
+
+
+        </StackLayout>
+            
+        
+      
+        
+    </ContentPage.Content>
+</ContentPage>

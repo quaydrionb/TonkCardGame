@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TonkCardGame"
+             x:Class="TonkCardGame.View.TwoPlayerGamePage"
+             BackgroundImageSource="{local:ImageResource TonkCardGame.images.CoolBackground.jpg}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label  FontSize="30" TextColor="White" Text="Classic Tonk Card Game"   Margin="110,0,250,0" />
+
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="Auto"/>
+
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+
+               
+                <Label  TextColor="White" Grid.Row="4" Grid.Column="0"  Grid.ColumnSpan="4" Text="Player 2 Score:"/>
+                <Label  TextColor="White" Grid.Row="4" Grid.Column="10"   Grid.ColumnSpan="4" Text="Player 1 Score:"/>
+
+                <Image Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}" Grid.Row="3" Grid.Column="6"  />
+                <Image BackgroundColor="White" Grid.Row="3" Grid.Column="7" />
+
+
+                <Button BorderColor="white" BorderWidth="5"  BackgroundColor="Black" TextColor="White" Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="2" Text="Hit" IsVisible="false" IsEnabled="False" />
+                <Button BorderColor="white" BorderWidth="5"  BackgroundColor="Black" TextColor="White" Grid.Row="4" Grid.Column="6" Grid.ColumnSpan="2" Text="Draw" IsVisible="false" IsEnabled="False"/>
+
+                <Button BorderColor="DarkRed" BorderWidth="5"  BackgroundColor="Black" TextColor="White" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="4" Text="Spread" IsVisible="false" IsEnabled="False"/>
+                <Button BorderColor="DarkRed" BorderWidth="5"  BackgroundColor="Black" TextColor="White" Grid.Row="4" Grid.Column="5" Grid.ColumnSpan="4" Text="Discard" IsVisible="false" IsEnabled="False"/>
+                <Button BorderColor="white" BorderWidth="5" BackgroundColor="DarkRed" TextColor="white" FontSize="15" Text="Start Game" Grid.Row="6" Grid.Column="5" Grid.ColumnSpan="4"/>
+
+
+                <Image Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}" Grid.Row="3"/>
+                <Image Margin="-30,0,0,0" Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}" Grid.Row="3"  Grid.Column="1"/>
+                <Image Margin="-60,0,0,0" Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}" Grid.Row="3" Grid.Column="2"/>
+                <Image Margin="-90,0,0,0" Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}" Grid.Row="3" Grid.Column="3"/>
+                <Image Margin="-120,0,0,0" Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}" Grid.Row="3" Grid.Column="4"/>
+                <Image Margin="-150,0,0,0" Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}" Grid.Row="3" Grid.Column="5" IsVisible="false"/>
+
+                <Image Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}"  Grid.Row="3"  Grid.Column="10"/>
+                <Image Margin="-30,0,0,0" Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}"  Grid.Row="3"  Grid.Column="11"/>
+                <Image Margin="-60,0,0,0"  Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}" Grid.Row="3"  Grid.Column="12"/>
+                <Image Margin="-90,0,0,0" Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}" Grid.Row="3" Grid.Column="13"/>
+                <Image Margin="-120,0,0,0" Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}" Grid.Row="3" Grid.Column="14"/>
+                <Image Margin="-150,0,0,0" Source="{local:ImageResource TonkCardGame.images.PlayingCard.jpg}" Grid.Row="3" Grid.Column="15"  IsVisible="false"/>
+
+
+
+                <Button WidthRequest="80" HeightRequest="80" CornerRadius="10" BackgroundColor="Red" TextColor="LightGoldenrodYellow" Text="Bet $5" Grid.Row="1" Grid.RowSpan="2"  Grid.Column="16" Grid.ColumnSpan="2"/>
+                <Button WidthRequest="80" HeightRequest="80" CornerRadius="10" BackgroundColor="DarkBlue" TextColor="LightGoldenrodYellow" Text="Bet $10" Grid.Row="3" Grid.Column="16" Grid.ColumnSpan="2"/>
+                <Button WidthRequest="80" HeightRequest="80" CornerRadius="10"  BackgroundColor="ForestGreen" TextColor="LightGoldenrodYellow" Text="Bet $25" Grid.Row="4"  Grid.Column="16" Grid.ColumnSpan="2"/>
+                <Button WidthRequest="80" HeightRequest="80"  CornerRadius="10" BackgroundColor="DarkOrange" TextColor="LightGoldenrodYellow" Text="Bet $100" Grid.Row="5" Grid.RowSpan="2" Grid.Column="16" Grid.ColumnSpan="2"/>
+
+
+
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
